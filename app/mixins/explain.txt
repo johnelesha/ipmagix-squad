@@ -1,0 +1,10 @@
+mixins are a way to reuse logic across multiple components by “mixing in” shared code.
+
+They’re basically JavaScript objects that can contain:
+
+    Data
+    Methods
+    Computed properties
+    Lifecycle hooks
+
+When you use a mixin in a component, Vue merges the mixin’s options into that component.

@@ -1,0 +1,10 @@
+layout is a reusable wrapper for pages — it defines the overall structure of the page
+(header, footer, sidebar, etc.) so you don’t have to repeat it in every .vue file.
+
+Think of layouts as templates for your pages.
+
+How layouts work
+
+    Stored in the layouts/ directory.
+    By default, Nuxt uses layouts/default.vue for all pages unless you specify a different one.
+    You can create multiple layouts (e.g., default, admin, auth) and assign them per page.

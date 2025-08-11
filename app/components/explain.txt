@@ -1,0 +1,3 @@
+Purpose: Store Vue components that you use across your project.
+
+Nuxt auto-imports components from this folder, so you don’t need to manually import them.

@@ -1,0 +1,4 @@
+for registering code that needs to run before your app’s components are created,
+often to set up external libraries, inject global helpers, or run configuration code.
+
+Think of plugins as “things my app needs to be aware of globally before it runs”.

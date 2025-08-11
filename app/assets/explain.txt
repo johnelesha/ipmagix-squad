@@ -1,0 +1,14 @@
+Purpose: Store uncompiled static resources that will be processed by Nuxt’s build system (Vite/Webpack).
+
+Files here get compiled, optimized, and hashed.
+
+Common contents:
+
+    CSS / SCSS → assets/css/main.css
+    Sass/Less variables and mixins
+    Images that you want to process (e.g., .png, .jpg, .svg)
+    Fonts (.woff, .ttf)
+
+Access in code:
+        <img src="@/assets/images/logo.png" />
+

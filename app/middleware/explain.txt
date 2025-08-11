@@ -1,0 +1,16 @@
+middleware is code that runs before a page or group of pages is rendered, allowing you to control access,
+redirect users, or run logic before the component loads.
+
+It’s like a “checkpoint” between the user navigating to a route and the page actually rendering.
+
+How middleware works
+
+    Runs on the server for SSR requests and on the client for client-side navigation.
+    Can be applied globally or per page.
+
+    Useful for:
+
+        Authentication checks (redirect if not logged in)
+        Role-based access control
+        Redirecting based on device type, locale, or query params
+        Running pre-fetch logic

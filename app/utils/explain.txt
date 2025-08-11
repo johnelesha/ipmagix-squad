@@ -1,0 +1,2 @@
+contains reusable helper functions, constants, or small modules that don’t belong to a specific component,
+page, or service but are needed across the app.
