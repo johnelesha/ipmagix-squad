@@ -1,0 +1,23 @@
+{
+    "sidebar": {
+        "clubAdmin": "مدير النادى",
+        "dashboard": "لوحة التحكم",
+        "staffManagement": "إدارة الموظفين",
+        "academyManagement": "إدارة الأكاديمية",
+        "facilityManagement": "إدارة المرافق",
+        "bookingCalendar": "تقويم الحجوزات",
+        "reports": "التقارير",
+        "billingSubscription": "الفواتير والاشتراكات",
+        "supportTickets": "تذاكر الدعم",
+        "notifications": "الإشعارات",
+        "clubSettings": "إعدادات النادى"
+    },
+    "navbar": {
+        "searchInput": "ابحث عن الأكاديميات، الموظفين، الحجوزات...",
+        "profileSettings": "إعدادات الملف الشخصى",
+        "clubSettings": "إعدادات النادى",
+        "planSettings": "ترقية الخطة",
+        "signOut": "تسجيل الخروج",
+        "clubAdministrator": "مدير النادى"
+    }
+}
