@@ -6,6 +6,7 @@ import { readdirSync, existsSync } from "fs";
 // Dynamically load JSON files from i18n/locales/en and i18n/locales/ar
 const enDir = "i18n/locales/en";
 const arDir = "i18n/locales/ar";
+
 const enFiles = existsSync(enDir)
   ? readdirSync(enDir)
       .filter((file) => file.endsWith(".json"))
@@ -34,6 +35,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/scripts",
     "@nuxtjs/i18n",
+    "@pinia/nuxt",
   ],
   i18n: {
     locales: [
@@ -51,8 +53,12 @@ export default defineNuxtConfig({
         files: arFiles,
         dir: "rtl",
       },
-    ],
+  ],
     defaultLocale: "en",
     langDir: "locales/",
+  },
+
+  imports: {
+    dirs: ["stores"],
   },
 });
