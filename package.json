@@ -16,6 +16,7 @@
     "@nuxt/image": "^1.11.0",
     "@nuxt/scripts": "^0.11.10",
     "@nuxtjs/i18n": "^10.0.4",
+    "@pinia/nuxt": "^0.11.2",
     "@tailwindcss/vite": "^4.1.11",
     "@unhead/vue": "^2.0.14",
     "daisyui": "^5.0.50",
