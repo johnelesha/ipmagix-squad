@@ -24,7 +24,7 @@
                 type="text"
                 placeholder="Enter full name"
                 class="w-full border-[0.2px] border-[#E5E7EB] rounded-lg px-3 py-2 text-sm placeholder-[#CCCCCC]"
-              />
+              >
             </div>
 
             <div>
@@ -35,7 +35,7 @@
                 type="email"
                 placeholder="Enter email address"
                 class="w-full border-[0.2px] border-[#E5E7EB] rounded-lg px-3 py-2 text-sm placeholder-[#CCCCCC]"
-              />
+              >
             </div>
 
             <div>
@@ -44,7 +44,7 @@
                 type="text"
                 placeholder="Enter phone number"
                 class="w-full border-[0.2px] border-[#E5E7EB] rounded-lg px-3 py-2 text-sm placeholder-[#CCCCCC]"
-              />
+              >
             </div>
 
             <div>
@@ -94,7 +94,7 @@
               <input
                 type="date"
                 class="w-full border-[0.2px] border-[#E5E7EB] rounded-lg px-3 py-2 text-sm"
-              />
+              >
             </div>
           </div>
         </div>
@@ -104,28 +104,28 @@
           <h3 class="text-sm font-medium mb-4">Permissions & Access</h3>
           <div class="grid grid-cols-2 gap-3 text-sm">
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> Manage Staff
+              <input type="checkbox" > Manage Staff
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> Manage Academies
+              <input type="checkbox" > Manage Academies
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> Manage Facilities
+              <input type="checkbox" > Manage Facilities
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> View Reports
+              <input type="checkbox" > View Reports
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> Manage Bookings
+              <input type="checkbox" > Manage Bookings
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> Handle Support
+              <input type="checkbox" > Handle Support
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> Billing Access
+              <input type="checkbox" > Billing Access
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" /> System Admin
+              <input type="checkbox" > System Admin
             </label>
           </div>
         </div>

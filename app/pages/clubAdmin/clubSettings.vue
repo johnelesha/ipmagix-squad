@@ -1,24 +1,25 @@
 <template>
   <div class="min-h-screen bg-gray-50 flex flex-col lg:flex-row">
     <!-- Sidebar -->
-    <AppSidebar class="w-full lg:w-64 flex-shrink-0" />
+    <!-- <AppSidebar class="w-full lg:w-64 flex-shrink-0" /> -->
 
     <!-- Main Content -->
     <div class="flex-1 flex flex-col">
       <!-- Header -->
-      <AppHeader class="w-full" />
+      <!-- <AppHeader class="w-full" /> -->
 
       <!-- Page Content -->
       <main class="flex-1 p-4 sm:p-6 overflow-y-auto">
         <div class="max-w-7xl mx-auto">
           <!-- Breadcrumb -->
           <div
-            class="flex flex-wrap items-center space-x-1 sm:space-x-2 text-sm text-gray-600 mb-4 sm:mb-6"
+            class="flex flex-wrap items-center space-x-1 sm:space-x-2 text-sm text-gray-600 mb-2 sm:mb-3"
           >
             <span>Dashboard</span>
             <Icon name="heroicons:chevron-right" class="w-4 h-4" />
             <span class="text-gray-900 font-medium">Club Profile</span>
           </div>
+          <h2 class="mb-6 md:mb-8 text-2xl">Club Profile</h2>
 
           <!-- Profile Completion -->
           <ProfileCompletion />
@@ -69,6 +70,13 @@
 
 <script setup>
 definePageMeta({
-  layout: false,
+    layout: 'clubs-admin'
+});
+useSeoMeta({
+    title: 'Club Admin - Club Settings',
+    description: 'Manage your club settings and profile efficiently and effectively.',
+    keywords: 'club admin, club settings, manage club, club profile',
+    ogTitle: 'Club Admin - Club Settings',
+    ogDescription: 'Manage your club settings and profile efficiently and effectively.',
 });
 </script>
