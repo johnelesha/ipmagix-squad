@@ -4,8 +4,9 @@ import { defineNuxtConfig } from "nuxt/config";
 import { readdirSync, existsSync } from "fs";
 
 // Dynamically load JSON files from i18n/locales/en and i18n/locales/ar
-const enDir = "locales/en";
-const arDir = "locales/ar";
+const enDir = "i18n/locales/en";
+const arDir = "i18n/locales/ar";
+
 const enFiles = existsSync(enDir)
   ? readdirSync(enDir)
       .filter((file) => file.endsWith(".json"))
@@ -16,6 +17,9 @@ const arFiles = existsSync(arDir)
       .filter((file) => file.endsWith(".json"))
       .map((file) => `ar/${file}`)
   : [];
+
+/* console.log("English locale files:", enFiles);
+console.log("Arabic locale files:", arFiles); */
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
@@ -35,12 +39,25 @@ export default defineNuxtConfig({
   ],
   i18n: {
     locales: [
-      { code: "en", language: "en-US", files: enFiles },
-      { code: "ar", language: "ar-AR", files: arFiles, dir: "rtl" },
-    ],
+      {
+        code: "en",
+        language: "en-US",
+        name: "English",
+        files: enFiles,
+        dir: "ltr",
+      },
+      {
+        code: "ar",
+        language: "ar-AR",
+        name: "Arabic",
+        files: arFiles,
+        dir: "rtl",
+      },
+  ],
     defaultLocale: "en",
     langDir: "locales/",
   },
+
   imports: {
     dirs: ["stores"],
   },

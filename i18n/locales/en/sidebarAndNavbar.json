@@ -1,0 +1,23 @@
+{
+    "sidebar": {
+        "clubAdmin": "Club Admin",
+        "dashboard": "Dashboard",
+        "staffManagement": "Staff Management",
+        "academyManagement": "Academy Management",
+        "facilityManagement": "Facility Management",
+        "bookingCalendar": "Booking Calendar",
+        "reports": "Reports",
+        "billingSubscription": "Billing & Subscription",
+        "supportTickets": "Support Tickets",
+        "notifications": "Notifications",
+        "clubSettings": "Club Settings"
+    },
+    "navbar": {
+        "searchInput": "Search academies, staff, bookings...",
+        "profileSettings": "Profile Settings",
+        "clubSettings": "Club Settings",
+        "planSettings": "Upgrade Plan",
+        "signOut": "Sign Out",
+        "clubAdministrator": "Club Administrator"
+    }
+}
