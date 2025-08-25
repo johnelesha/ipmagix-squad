@@ -1,8 +1,8 @@
 <template>
-    <div class="clubAdmin flex" :dir="direction">
-        <div class="z-50">
+    <div class="clubAdmin flex relative" :dir="direction">
+        <header class="z-50 md:static absolute top-14 sm:top-5 ltr:left-3 ltr:sm:left-5 rtl:right-3 rtl:sm:right-5">
             <Sidebar />
-        </div>
+        </header>
         <div class="flex-auto sm:flex-1 z-10">
             <Navbar />
             <main class="">

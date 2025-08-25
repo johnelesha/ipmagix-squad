@@ -18,6 +18,7 @@
         "clubSettings": "Club Settings",
         "planSettings": "Upgrade Plan",
         "signOut": "Sign Out",
-        "clubAdministrator": "Club Administrator"
+        "clubAdministrator": "Club Administrator",
+        "viewNotifications": "Load More"
     }
 }

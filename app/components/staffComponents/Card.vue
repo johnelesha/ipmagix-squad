@@ -12,7 +12,7 @@
       </div>
 
       <div class="flex items-center justify-center rounded-xl" :class="iconBg">
-        <slot name="icon"></slot>
+        <slot name="icon" />
       </div>
     </div>
   </div>

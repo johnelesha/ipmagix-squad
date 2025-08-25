@@ -3,7 +3,7 @@
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" >
 
         <div class="drawer-content">
-            <label for="my-drawer-2" class="btn btn-primary-content drawer-button md:hidden w-8 h-35 sm:h-20 px-0">
+            <label for="my-drawer-2" class="btn btn-primary-content drawer-button md:hidden w-10 h-10 px-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
                     <path
                         fill="currentColor" fill-rule="evenodd"

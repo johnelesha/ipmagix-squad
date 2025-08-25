@@ -3,7 +3,7 @@
         <ul class="flex" :class="{ 'flex-row-reverse': direction === 'rtl' }">
             <li>
                 <nuxt-link to="/clubAdmin/dashboard" class="text-[#6B7280] hover:text-[#111827]">
-                    Dashboard
+                    {{ $t('sidebar.dashboard') }}
                 </nuxt-link>
             </li>
             <li v-for="(link, index) in extraLinks" :key="index">
@@ -36,6 +36,16 @@ defineProps({
 
 const { t: _t } = useI18n();
 const { direction } = useDirection();
+
+
+/* import { useRoute } from 'vue-router';
+const route = useRoute();
+const extraLinks = computed(() => [
+    { to: `/clubAdmin/staff/${route.params.id}`, name: `staffManagement.staff_${route.params.id}` },
+]); */
+/* const extraLinks = [
+    { to: '/clubAdmin/staff/roles', name: 'staffManagement.roles' },
+]; */
 </script>
 
 <style></style>
