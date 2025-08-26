@@ -1,0 +1,38 @@
+{
+    "dashboard": {
+        "title": "Club Admin - Dashboard",
+        "description": "Welcome to your club's dashboard. Monitor key metrics, view recent activities, and manage your club efficiently with our intuitive dashboard tools.",
+        "keywords": "club dashboard, club management, key metrics, recent activities, club overview, club tools",
+        "ogTitle": "Club Admin - Dashboard",
+        "ogDescription": "Welcome to your club's dashboard. Monitor key metrics, view recent activities, and manage your club efficiently with our intuitive dashboard tools.",
+        "welcome": "Welcome back, Admin! 👋",
+        "summary": "Here's what's happening at your sports academies today.",
+        "status": "All systems operational",
+        "dropdown": {
+            "options": {
+                "all": "All",
+                "option1": "Downtown Athletic",
+                "option2": "Wetside Sports Hub",
+                "option3": "Elite Training Facility"
+            }
+        },
+        "cards": {
+            "card1": {
+                "title": "Total Academy Members",
+                "track": "from last month"
+            },
+            "card2": {
+                "title": "Active Bookings",
+                "track": "from yesterday"
+            },
+            "card3": {
+                "title": "Monthly Revenue",
+                "track": "from last month"
+            },
+            "card4": {
+                "title": "Staff Members",
+                "track": "new this week"
+            }
+        }
+    }
+}

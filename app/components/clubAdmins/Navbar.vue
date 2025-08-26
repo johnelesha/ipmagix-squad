@@ -186,8 +186,25 @@ const getSeverityColor = (severity: string): string => severityColors[severity.t
 const formatTime = (time: Date): string => {
     const now = new Date();
     const diffMs = now.getTime() - time.getTime();
-    const diffMins = Math.round(diffMs / (1000 * 60));
-    return `${diffMins} MIN${diffMins === 1 ? "" : "S"} AGO`;
+    const diffMins = Math.floor(diffMs / (1000 * 60));
+    const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+    if (diffMins < 60) {
+        return `${diffMins} MIN${diffMins === 1 ? '' : 'S'} AGO`;
+    } else if (diffHrs < 24) {
+        const remainingMins = diffMins % 60;
+        if (remainingMins === 0) {
+            return `${diffHrs} HR${diffHrs === 1 ? '' : 'S'} AGO`;
+        }
+        return `${diffHrs} HR${diffHrs === 1 ? '' : 'S'}, ${remainingMins} MIN${remainingMins === 1 ? '' : 'S'} AGO`;
+    } else {
+        const remainingHrs = diffHrs % 24;
+        if (remainingHrs === 0) {
+            return `${diffDays} DAY${diffDays === 1 ? '' : 'S'} AGO`;
+        }
+        return `${diffDays} DAY${diffDays === 1 ? '' : 'S'}, ${remainingHrs} HR${remainingHrs === 1 ? '' : 'S'} AGO`;
+    }
 };
 
 const toggleDropdown = () => {

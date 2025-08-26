@@ -5,9 +5,7 @@
         </header>
         <div class="flex-auto sm:flex-1 z-10">
             <Navbar />
-            <main class="">
-                <slot />
-            </main>
+            <slot />
         </div>
     </div>
 </template>

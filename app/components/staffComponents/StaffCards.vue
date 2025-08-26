@@ -92,10 +92,6 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Card from "./Card";
-
-export default {
-  components: { Card },
-};
 </script>
