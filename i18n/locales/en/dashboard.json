@@ -33,6 +33,36 @@
                 "title": "Staff Members",
                 "track": "new this week"
             }
-        }
+        },
+        "charts": {
+            "chart1": {
+                "title": "Revenue & Bookings Trend",
+                "case": "Revenue (EGP)",
+                "relate": "Booking"
+            },
+            "chart2": {
+                "title": "Facility Usage",
+                "facility1": "Tennis Courts",
+                "facility2": "Swimming Pools",
+                "facility3": "Basketball Court",
+                "facility4": "Fitness Center",
+                "facility5": "Meeting Rooms"
+            },
+            "chart3": {
+                "title": "Weekly Performance Overview"
+            }
+        },
+        "booking": "Recent Bookings",
+        "viewCalendar": "View Calendar",
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "managed": "Manage All",
+        "open": "Open",
+        "inProgress": "In Progress",
+        "resolved": "Resolved",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low",
+        "urgent": "Urgent"
     }
 }

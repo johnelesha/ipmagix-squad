@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-[#f5f9fd] ltr:pl-5 ltr:pr-3 rtl:pr-5 rtl:pl-3 pb-4 pt-8">
+    <main class="bg-[#f5f9fd] ltr:pl-5 ltr:pr-3 rtl:pr-5 rtl:pl-3 pb-6 pt-8">
         <WelcomeHeader />
         <Dropdown />
         <Statistics :cards="cards" />
