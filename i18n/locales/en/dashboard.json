@@ -1,0 +1,68 @@
+{
+    "dashboard": {
+        "title": "Club Admin - Dashboard",
+        "description": "Welcome to your club's dashboard. Monitor key metrics, view recent activities, and manage your club efficiently with our intuitive dashboard tools.",
+        "keywords": "club dashboard, club management, key metrics, recent activities, club overview, club tools",
+        "ogTitle": "Club Admin - Dashboard",
+        "ogDescription": "Welcome to your club's dashboard. Monitor key metrics, view recent activities, and manage your club efficiently with our intuitive dashboard tools.",
+        "welcome": "Welcome back, Admin! 👋",
+        "summary": "Here's what's happening at your sports academies today.",
+        "status": "All systems operational",
+        "dropdown": {
+            "options": {
+                "all": "All",
+                "option1": "Downtown Athletic",
+                "option2": "Wetside Sports Hub",
+                "option3": "Elite Training Facility"
+            }
+        },
+        "cards": {
+            "card1": {
+                "title": "Total Academy Members",
+                "track": "from last month"
+            },
+            "card2": {
+                "title": "Active Bookings",
+                "track": "from yesterday"
+            },
+            "card3": {
+                "title": "Monthly Revenue",
+                "track": "from last month"
+            },
+            "card4": {
+                "title": "Staff Members",
+                "track": "new this week"
+            }
+        },
+        "charts": {
+            "chart1": {
+                "title": "Revenue & Bookings Trend",
+                "case": "Revenue (EGP)",
+                "relate": "Booking"
+            },
+            "chart2": {
+                "title": "Facility Usage",
+                "facility1": "Tennis Courts",
+                "facility2": "Swimming Pools",
+                "facility3": "Basketball Court",
+                "facility4": "Fitness Center",
+                "facility5": "Meeting Rooms"
+            },
+            "chart3": {
+                "title": "Weekly Performance Overview"
+            }
+        },
+        "booking": "Recent Bookings",
+        "viewCalendar": "View Calendar",
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "managed": "Manage All",
+        "open": "Open",
+        "inProgress": "In Progress",
+        "resolved": "Resolved",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low",
+        "urgent": "Urgent"
+    }
+}
