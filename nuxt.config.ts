@@ -2,6 +2,7 @@
 import tailwindcss from "@tailwindcss/vite";
 import { defineNuxtConfig } from "nuxt/config";
 import { readdirSync, existsSync } from "fs";
+import type { NuxtI18nOptions } from "@nuxtjs/i18n";
 
 // Dynamically load JSON files from i18n/locales/en and i18n/locales/ar
 const enDir = "i18n/locales/en";
@@ -9,13 +10,13 @@ const arDir = "i18n/locales/ar";
 
 const enFiles = existsSync(enDir)
   ? readdirSync(enDir)
-      .filter((file) => file.endsWith(".json"))
-      .map((file) => `en/${file}`)
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => `en/${file}`)
   : [];
 const arFiles = existsSync(arDir)
   ? readdirSync(arDir)
-      .filter((file) => file.endsWith(".json"))
-      .map((file) => `ar/${file}`)
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => `ar/${file}`)
   : [];
 
 /* console.log("English locale files:", enFiles);
@@ -37,6 +38,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@pinia/nuxt",
   ],
+
   i18n: {
     locales: [
       {
@@ -53,11 +55,21 @@ export default defineNuxtConfig({
         files: arFiles,
         dir: "rtl",
       },
-  ],
+    ],
     defaultLocale: "en",
     langDir: "locales/",
+    htmlAttrs: (locale: { code: string; dir: "ltr" | "rtl" }) =>
+    ({
+      lang: locale.code,
+      dir: locale.dir,
+    } as const),
+  } as NuxtI18nOptions,
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
   },
-
   imports: {
     dirs: ["stores"],
   },

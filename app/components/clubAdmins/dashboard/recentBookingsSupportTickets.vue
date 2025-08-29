@@ -1,9 +1,9 @@
 <template>
-    <section class="flex justify-center items-center gap-x-5 mt-7 rounded-lg">
-        <div class="bg-white p-4 rounded-lg shadow w-[50%]">
+    <section class="grid grid-cols-1 md:grid-cols-2 px-0 gap-y-7 md:gap-x-5 md:gap-y-0 mt-7 rounded-lg">
+        <div class="bg-white py-4 px-2 rounded-lg shadow w-full">
             <RecentBooking />
         </div>
-        <div class="bg-white p-4 rounded-lg shadow w-[50%]">
+        <div class="bg-white py-4 px-2 rounded-lg shadow w-full">
             <SupportTickets />
         </div>
     </section>

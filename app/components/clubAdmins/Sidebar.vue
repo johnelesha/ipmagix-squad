@@ -1,9 +1,9 @@
 <template>
-    <div class="drawer md:drawer-open sideBarClubAdmin md:px-3.5" :dir="direction">
+    <div class="drawer lg:drawer-open sideBarClubAdmin lg:px-3.5" :dir="direction">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" >
 
         <div class="drawer-content">
-            <label for="my-drawer-2" class="btn btn-primary-content drawer-button md:hidden w-10 h-10 px-0">
+            <label for="my-drawer-2" class="btn btn-primary-content drawer-button lg:hidden w-10 h-10 px-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
                     <path
                         fill="currentColor" fill-rule="evenodd"
@@ -16,7 +16,7 @@
         <nav class="drawer-side fixed top-0 left-0 h-full z-50">
             <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay" />
             <ul
-                class="menu bg-white text-base-content h-full w-68 md:w-60 p-0 overflow-y-auto scrollbar-hidden px-3.5 md:px-0">
+                class="menu bg-white text-base-content h-full w-68 lg:w-60 p-0 overflow-y-auto scrollbar-hidden px-3.5 lg:px-0">
                 <li>
                     <div class="flex items-center mb-6 hover:bg-transparent cursor-default">
                         <img src="~/assets/logo.png" alt="logo" class="w-12 px-3 py-4" >
