@@ -13,17 +13,26 @@
                 to="/clubAdmin/booking"
                 class="text-xs px-2.5 py-1 gap-y-0 gap-x-1 btn rounded-lg bg-transparent hover:bg-transparent">
                 {{ t("dashboard.viewCalendar") }}
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <svg
+                    v-if="direction === 'ltr'" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 24 24">
                     <path
                         fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="2" d="M7 7h10m0 0v10m0-10L7 17" />
+                </svg>
+                <svg v-else xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                    <path
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M17 7H7m0 0v10M7 7l10 10" />
                 </svg>
             </NuxtLink>
         </div>
 
         <div class="mt-3">
             <ul class="list rounded-box">
-                <li v-for="booking in sortedBookings" :key="booking.id" class="list-row items-center bg-[#F9FAFB] px-2 sm:px-4 py-5 mb-4">
+                <li
+                    v-for="booking in sortedBookings" :key="booking.id"
+                    class="list-row items-center bg-[#F9FAFB] px-2 sm:px-4 py-5 mb-4">
                     <div class="bg-[#DBEAFE] p-1.5 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 15 15">
                             <path
