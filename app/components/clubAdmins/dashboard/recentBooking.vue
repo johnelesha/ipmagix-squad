@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-y-3" :dir="direction">
         <div class="flex justify-between items-center">
-            <h2 class="text-lg font-semibold flex items-center gap-x-2">
+            <h2 class="text-base sm:text-lg font-semibold flex items-center gap-x-2">
                 <svg width="1.2em" height="1.2em" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M6.99992 1.33366V2.66699H10.9999V1.33366H12.3333V2.66699H14.9999C15.1866 2.66699 15.3444 2.73144 15.4733 2.86032C15.6021 2.98921 15.6666 3.14699 15.6666 3.33366V14.0003C15.6666 14.187 15.6021 14.3448 15.4733 14.4737C15.3444 14.6025 15.1866 14.667 14.9999 14.667H2.99992C2.81325 14.667 2.65547 14.6025 2.52659 14.4737C2.3977 14.3448 2.33325 14.187 2.33325 14.0003V3.33366C2.33325 3.14699 2.3977 2.98921 2.52659 2.86032C2.65547 2.73144 2.81325 2.66699 2.99992 2.66699H5.66659V1.33366H6.99992ZM14.3333 8.00033H3.66659V13.3337H14.3333V8.00033ZM5.66659 4.00033H3.66659V6.66699H14.3333V4.00033H12.3333V5.33366H10.9999V4.00033H6.99992V5.33366H5.66659V4.00033Z"
@@ -23,7 +23,7 @@
 
         <div class="mt-3">
             <ul class="list rounded-box">
-                <li v-for="booking in sortedBookings" :key="booking.id" class="list-row items-center bg-[#F9FAFB] py-5 mb-4">
+                <li v-for="booking in sortedBookings" :key="booking.id" class="list-row items-center bg-[#F9FAFB] px-2 sm:px-4 py-5 mb-4">
                     <div class="bg-[#DBEAFE] p-1.5 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 15 15">
                             <path

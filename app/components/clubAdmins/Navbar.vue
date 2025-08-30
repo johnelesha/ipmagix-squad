@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar border-b-[0.3px] border-[#C5C5C5] p-0 py-5" :dir="direction">
-        <div class="flex flex-col sm:flex-row justify-end w-full md:px-11 px-6 gap-3">
-            <div class="relative w-72 mx-auto sm:mx-0 mb-3 sm:mb-0 content-center bg-[#F9FAFB] text-[#CCCCCC]">
+        <div class="flex flex-col sm:flex-row justify-end w-full md:px-3 lg:px-11 px-6 gap-3">
+            <div class="relative w-60 sm:w-72 mx-auto sm:mx-0 mb-3 sm:mb-0 content-center bg-[#F9FAFB] text-[#CCCCCC]">
                 <span class="absolute ltr:left-3 rtl:right-3 top-1/2 -translate-y-1/2 cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -12,12 +12,12 @@
                 </span>
                 <input
                     type="text" :placeholder="$t('navbar.searchInput')"
-                    class="w-full ltr:pl-11 rtl:pr-11 py-2 rounded-lg text-sm text-gray-700 placeholder-[#CCCCCC] focus:outline-none focus:ring-1" >
+                    class="w-full ltr:pl-11 rtl:pr-11 py-2 rounded-lg text-xs sm:text-sm text-gray-700 placeholder-[#CCCCCC] focus:outline-none focus:ring-1" >
             </div>
 
             <div class="flex items-center justify-center sm:justify-end gap-3">
                 <div
-                    class="dropdown ltr:dropdown-start rtl:dropdown-end ltr:sm:dropdown-center rtl:sm:dropdown-center content-center mx-2">
+                    class="dropdown dropdown-center content-center mx-2">
                     <button ref="notificationButton" type="button" class="btn btn-ghost btn-circle" @click.stop="toggleDropdown">
                         <div class="indicator">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="dropdown dropdown-start sm:dropdown-center lg:dropdown-start content-center mx-5 sm:mx-3">
+                <div class="dropdown dropdown-start sm:dropdown-center lg:dropdown-start content-center mx-4 md:mx-3 lg:mx-5 sm:mx-3">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                         <div
                             class="w-10 rounded-full text-white flex items-center justify-center aspect-square bg-gradient-to-r from-[#F97316] to-[#EA580C]">

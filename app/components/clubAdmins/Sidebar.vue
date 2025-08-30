@@ -1,9 +1,9 @@
 <template>
     <div class="drawer md:drawer-open sideBarClubAdmin md:px-3.5" :dir="direction">
-        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" >
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle">
 
         <div class="drawer-content">
-            <label for="my-drawer-2" class="btn btn-primary-content drawer-button md:hidden w-10 h-10 px-0">
+            <label for="my-drawer-2" class="btn btn-primary-content border-0 drawer-button md:hidden w-10 h-10 px-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
                     <path
                         fill="currentColor" fill-rule="evenodd"
@@ -16,19 +16,20 @@
         <nav class="drawer-side fixed top-0 left-0 h-full z-50">
             <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay" />
             <ul
-                class="menu bg-white text-base-content h-full w-68 md:w-60 p-0 overflow-y-auto scrollbar-hidden px-3.5 md:px-0">
+                class="menu bg-white text-base-content h-full w-68 md:w-48 lg:w-60 p-0 overflow-y-auto scrollbar-hidden px-3.5 md:px-0">
                 <li>
-                    <div class="flex items-center mb-6 hover:bg-transparent cursor-default">
-                        <img src="~/assets/logo.png" alt="logo" class="w-12 px-3 py-4" >
+                    <div class="flex items-center mb-6 hover:bg-transparent cursor-default md:px-0 lg:px-3">
+                        <img src="~/assets/logo.png" alt="logo" class="w-12 px-2 lg:px-3 py-4">
                         <div class="leading-5">
-                            <p class="text-[#1F2937] text-xl">MAGIX SQUAD</p>
+                            <p class="text-[#1F2937] text-lg lg:text-xl">MAGIX SQUAD</p>
                             <p class="text-[#6B7280]">{{ $t("sidebar.clubAdmin") }}</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/dashboard" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/dashboard"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -40,7 +41,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/staff" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/staff"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -52,7 +54,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/academy" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/academy"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -64,7 +67,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/facility" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/facility"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -76,7 +80,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/booking" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/booking"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -88,7 +93,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/reports" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/reports"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -100,7 +106,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/billing" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/billing"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -112,7 +119,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/support" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/support"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -124,7 +132,8 @@
                 </li>
                 <li>
                     <nuxt-link
-                        to="/clubAdmin/notifications" class="hover:bg-transparent py-3 mb-3 text-lg"
+                        to="/clubAdmin/notifications"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
                         @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -135,7 +144,10 @@
                     </nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/clubAdmin/clubSettings" class="hover:bg-transparent py-3 mb-3 text-lg" @click="closeDrawer">
+                    <nuxt-link
+                        to="/clubAdmin/clubSettings"
+                        class="hover:bg-transparent py-3 mb-3 text-base md:text-sm lg:text-lg md:px-1 lg:px-3"
+                        @click="closeDrawer">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.00008 0.666341L15.3334 4.33301V11.6663L9.00008 15.333L2.66675 11.6663V4.33301L9.00008 0.666341ZM9.00008 2.21301L4.00008 5.10634V10.893L9.00008 13.7863L14.0001 10.893V5.10634L9.00008 2.21301ZM9.00008 10.6663C8.52008 10.6663 8.07564 10.5463 7.66675 10.3063C7.25786 10.0663 6.93341 9.7419 6.69341 9.33301C6.45341 8.92412 6.33341 8.47967 6.33341 7.99967C6.33341 7.51967 6.45341 7.07523 6.69341 6.66634C6.93341 6.25745 7.25786 5.93301 7.66675 5.69301C8.07564 5.45301 8.52008 5.33301 9.00008 5.33301C9.48008 5.33301 9.92453 5.45301 10.3334 5.69301C10.7423 5.93301 11.0667 6.25745 11.3067 6.66634C11.5467 7.07523 11.6667 7.51967 11.6667 7.99967C11.6667 8.47967 11.5467 8.92412 11.3067 9.33301C11.0667 9.7419 10.7423 10.0663 10.3334 10.3063C9.92453 10.5463 9.48008 10.6663 9.00008 10.6663ZM9.00008 9.33301C9.24008 9.33301 9.4623 9.27301 9.66675 9.15301C9.87119 9.03301 10.0334 8.87079 10.1534 8.66634C10.2734 8.4619 10.3334 8.23967 10.3334 7.99967C10.3334 7.75967 10.2734 7.53745 10.1534 7.33301C10.0334 7.12856 9.87119 6.96634 9.66675 6.84634C9.4623 6.72634 9.24008 6.66634 9.00008 6.66634C8.76008 6.66634 8.53786 6.72634 8.33342 6.84634C8.12897 6.96634 7.96675 7.12856 7.84675 7.33301C7.72675 7.53745 7.66675 7.75967 7.66675 7.99967C7.66675 8.23967 7.72675 8.4619 7.84675 8.66634C7.96675 8.87079 8.12897 9.03301 8.33342 9.15301C8.53786 9.27301 8.76008 9.33301 9.00008 9.33301Z"
@@ -167,9 +179,8 @@ function closeDrawer() {
 <style scoped>
 .sideBarClubAdmin {
     .router-link-active {
-        background-color: #fde9d3;
-        border-left: 4px solid #f19224;
-        /* @apply bg-[#FDE9D3] border-s-4 border-[#F19224]; */
+        background-color: #FDE9D3;
+        border-inline-start: 4px solid #F19224;
     }
 }
 </style>

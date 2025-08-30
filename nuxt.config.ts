@@ -9,13 +9,13 @@ const arDir = "i18n/locales/ar";
 
 const enFiles = existsSync(enDir)
   ? readdirSync(enDir)
-      .filter((file) => file.endsWith(".json"))
-      .map((file) => `en/${file}`)
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => `en/${file}`)
   : [];
 const arFiles = existsSync(arDir)
   ? readdirSync(arDir)
-      .filter((file) => file.endsWith(".json"))
-      .map((file) => `ar/${file}`)
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => `ar/${file}`)
   : [];
 
 /* console.log("English locale files:", enFiles);
@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@pinia/nuxt",
   ],
+  plugins: ["~/plugins/i18n-attributes.ts"],
   i18n: {
     locales: [
       {
@@ -53,11 +54,16 @@ export default defineNuxtConfig({
         files: arFiles,
         dir: "rtl",
       },
-  ],
+    ],
     defaultLocale: "en",
     langDir: "locales/",
   },
-
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
   imports: {
     dirs: ["stores"],
   },
