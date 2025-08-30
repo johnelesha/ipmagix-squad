@@ -2,7 +2,6 @@
 import tailwindcss from "@tailwindcss/vite";
 import { defineNuxtConfig } from "nuxt/config";
 import { readdirSync, existsSync } from "fs";
-import type { NuxtI18nOptions } from "@nuxtjs/i18n";
 
 // Dynamically load JSON files from i18n/locales/en and i18n/locales/ar
 const enDir = "i18n/locales/en";
@@ -38,7 +37,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@pinia/nuxt",
   ],
-
+  plugins: ["~/plugins/i18n-attributes.ts"],
   i18n: {
     locales: [
       {
@@ -58,12 +57,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "en",
     langDir: "locales/",
-    htmlAttrs: (locale: { code: string; dir: "ltr" | "rtl" }) =>
-    ({
-      lang: locale.code,
-      dir: locale.dir,
-    } as const),
-  } as NuxtI18nOptions,
+  },
   app: {
     head: {
       charset: "utf-8",
